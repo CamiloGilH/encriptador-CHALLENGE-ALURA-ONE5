@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=IBM+Plex+Mono&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Encriptador | Alura-Oracle ONE5</title>
+</head>
+<body>
+    
+    <header>
+        <img class="alura-img" src="assets/icons/a.svg" alt="icon alura">
+    </header>
+
+    <div class="container">    
+        <section class="rigth">
+            <div class="box1">
+                <img class="img-1" src="assets/icons/backgrorund-1.png" alt="">       
+                <textarea name="insert message" class="message"></textarea>
+                <span id="hidden" class="typing">Ingrese su texto aqui</span>
+                <span  style="display: none;" class="errorMsg">Solo letras <br>minusculas</span>
+            </div>
+          
+            <div class="section1-1">
+                <div class="warning">
+                    <img src="assets/icons/warning.svg" alt="warning advertencia"> 
+                    <span>Solo letras minúsculas y sin caracteres.</span>
+                </div>
+                <div class="buttons">
+                    <button class="encrypt encrypt2 button1-2">Encriptar Mensaje</button>
+                    <button class="decrypt button1-2">Desencriptar Mensaje</button>               
+                        
+                </div>
+            </div>
+        </section>
+        <aside class="left">
+            <img class="img-2" src="./assets/icons/background2.svg" alt="search">
+            <img class="img-3" src="./assets/icons/search.png" alt="lupa">
+            <textarea readonly name="message encrypt o decrypt" class="message2" id="look-message"></textarea>
+            <h3 class="text-look-message equals">Ningun mensaje fue <br>encontrado</h3>
+            <h3 class="text-look-message2 equals">Ingresa el texto que desees <br>encriptar o desencriptar</h3>
+            <button class="active">Copiar</button> 
+        </aside>         
+    </div>
+    <footer>
+
+        <p>&copy Camilo Andrés Gil Herrera <br> &copy; Alura-Oracle ONE5</p>
+   </footer>
+    <script src="app.js"></script>
+</body>
+</html>
